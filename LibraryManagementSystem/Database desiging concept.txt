@@ -1,0 +1,64 @@
+Database desiging concept
+
+Study about : SQL - Normalised form
+
+Keep in mind below points:
+1. Try to make seperate table for each entity. (e.g : Customer, Product, Contry,)
+2. All information related to that Entity should be in same table (Customer, ID, Phone, address,,)
+3. At any condition same data should not be at 2 places
+4. for mibile number u can not use int because int range is -2,147,483,647 to 2,147,483,647.
+Try in DB for your understanding.......tinyint, int
+
+
+
+
+5. Query...I am not doing today because u still need to spend more time on understanding DB design.
+
+Select
+Update
+Delete
+Insert
+
+Select ---
+Inner join
+Outer join
+Left outer join, Right Outer join
+Union, Union All
+
+Where condition----
+Max 
+min
+avg
+sum
+
+Group By
+Order By
+In
+Like
+Having
+
+
+6. Concept: 
+
+Normalization
+Primary Key/ CandidateKey, Foreign Key, Unique Key
+Index- Cluster Index, Non-cluster index
+composite key,trigger (only definition)
+stored procedure, function,views,
+export database(with or without data);
+
+Constraint - NO
+
+
+
+
+
+
+
+
+Angular - 
+
+Backend -->Java/.NET/PHP/Node
+
+DB
+

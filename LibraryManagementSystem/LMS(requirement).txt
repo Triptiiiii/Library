@@ -1,0 +1,38 @@
+
+
+
+FLOW DIAGRAM
+
+User-->Req. BOOK to the system-->Search-->NO Book-->Stop
+						    -->YES Book-->Librabrian-->User is member-->Yes,is a member-->Req. book is available-->yes-->issue
+															/not -->Registration page                         -->No
+
+
+User-->Submit the book-->LIbrarian-->Check the book id--> Update the db
+
+Librarian-->add new books-->update the db
+
+Librarian-->delete the book-->update the db
+
+Libarian-->update the book
+
+List, Add, delete, update, issue
+
+Book Table---
+Book ID---PK
+TITLE,AUTHOR
+
+Member Table---
+Member ID --pk, Member Name
+Member contact no. and emailId and Address
+
+Issue Table--(Libarian)
+Book ID, Member ID, Availability
+
+Member Signup--
+Member Id --random no. --6digit non-edit, MemberName--textBox--20size, Email id, contact no.--textbox--size20 Address area--6 row and 30column
+Add member button in the center
+JS validation--should be required field
+
+
+

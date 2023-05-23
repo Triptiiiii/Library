@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="AddBooks.css">
+    <script>
+         function myfunction1() {
+	    var title,author,status,text;
+
+	    title = document.getElementById("title").value;
+	    author = document.getElementById("author").value;
+		status = document.getElementById("status").value;
+		
+	   
+
+		if(title=="" ||author==""|| status=="" && status!="Available" && status!="Issued"){
+			text= alert("Please fill up all the fields correctly");
+		}else{
+			text = alert("done")
+			document.frm.submit();
+		}
+		
+	    
+		document.getElementById("title").innerHTML = text;
+		document.getElementById("author").innerHTML = text;
+		document.getElementById("status").innerHTML =text;
+		
+	   }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Add Books</h1>
+           <hr>
+          </div>
+      </div>
+    <br>
+    <br>
+       <div class="container2">
+       <form name="frm" action="" method="post">
+       <table  class="table1" width="70%">
+        <tr >
+            <div class="input-container">
+            <td width="20%"><label for="bookid" >Book ID : </label></td>
+            <td colspan="3" ><input type="number" class="form-control" name="bookid"  value="123344" id="bookid" maxlength = "6" readonly
+             required></td>
+        </div>
+        </tr>
+         <tr>
+            <div class="input-container">
+            <td><label for="title">Title : </label> </td>
+            <td ><input type="text" class="form-control" name="title" placeholder="Title" id="title" maxlength = "50" required></td>
+            
+        </div>
+        </tr>
+        <tr >
+            <div class="input-container">
+            <td><label for="author">Author : </label></td>
+            <td colspan="3" ><input type="author" class="form-control" name="author" id="author" maxlength = "50" placeholder="Author Name" required></td>
+        </div>
+        </tr>
+        <tr>
+            <div class="input-container">
+            <td><label for="status">Status(Avail/issued) : </label></td>
+            <td ><input type="text" class="form-control" name="status" placeholder="Status" id="status" maxlength = "50" required ></td>
+            
+        </div>
+        </tr>
+     </table>
+        </form>
+      </div>
+    <div class="center">
+    <button type="submit" class="btn btn-primary btn-lg" onclick="myfunction1()">SUBMIT</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="submit" class="btn btn-primary btn-lg" onclick="myfunction2()">QUIT</button>
+    
+    </div>
+   
+</body>
+</html>

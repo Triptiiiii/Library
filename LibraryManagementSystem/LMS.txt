@@ -1,0 +1,18 @@
+                                               SYSTEM REQUIREMENT DOCUMENT-----
+
+This project is about Library Management System ie LMS.
+LMS is an application which is built to manage all the functions of a traditional Library in a Digital way.
+LMS allows librarians to keep track of books, journals, magazines, and other library materials.
+It also collects the data of borrowing and returning of these library materials.
+The primary objective of the LMS is to Add, Delete, View, Issue Books and make available all the data for the Users.
+LMS stores all its Data in a database with the help of MySQL.
+We are using HTML, CSS and JS technologies for the frontend development of the LMS and for the Business Dev. ,we are using JDBC, JSP and Servlet.
+The Deployment of the LMS Project is on Tomcat.Tomcat is a popular web server and servlet container that is widely used for deploying Java web applications. 
+Actors---
+There are 3 Actors involved in the LMS ---
+User--User is an actor which sends request to the Librarian for the data.
+Librarian--As Librarian is a second Actor ,who recieves the req. from the Actor1(User) as well as sends that req. to the System and delivers the data as a response to the User.
+System/Application.--System is a platform where the Actor2 (Librarian) sends req. to the Actor3 (System) and then the Librarian selects the specific Books or Journals from the Application and sends it as a response to the End User.
+
+
+
